@@ -18,6 +18,18 @@ let characters = [
         'characterName': 'Anubis God Warrior'
 
     },
+    {
+        img: 'https://img.freepik.com/premium-photo/warrior-gaming-character-girl_758367-6507.jpg',
+        skinName: 'Realm of Legends',
+        'characterName': 'Katherine Langford'
+
+    },
+    {
+        img: 'https://img.freepik.com/premium-photo/anubis-god-warrior-antropomophized-armour_751108-3212.jpg',
+        skinName: 'Ancient Gods',
+        'characterName': 'Anubis God Warrior'
+
+    },
 ];
 
 characters.forEach((character) => {
