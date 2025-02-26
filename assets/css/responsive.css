@@ -226,4 +226,100 @@
       }
     }
   }
+
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .landingPage {
+      width: 100%;
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 3rem;
+      align-items: start;
+      > .sliderMainContainer {
+        margin: 3rem 0;
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        > .sliderContainer {
+          position: relative;
+          width: 100%;
+          height: 90%;
+          overflow: hidden;
+          background: transparent;
+          .slide::before {
+            z-index: 99;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+              to top,
+              #ad00d085,
+              #550053e1,
+              #63004f87,
+              #47003981,
+              #16151800,
+              #14141400
+            );
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
+          }
+          .slide {
+            > .slideText {
+              z-index: 99;
+              padding: 0 1.5rem 1rem;
+              z-index: 9999;
+              color: #fff;
+              font-size: 1.5rem;
+              font-weight: 400;
+            }
+          }
+          .controlBtn {
+            z-index: 99999;
+            padding: 1.2rem 0.4rem;
+            margin-top: -2.2rem;
+            color: rgb(188, 188, 188);
+            font-size: 2rem;
+          }
+        }
+        > .sliderbtnContainer {
+          > .sliderBtn {
+            height: 0.7rem;
+            width: 0.7rem;
+            &:hover {
+              background-color: #580056;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sectionHeading {
+    background-image: linear-gradient(
+      to right,
+      #bd00e385,
+      #ad00d085,
+      #7a00784a,
+      #63004f3f,
+      #63004f00,
+      #14141400
+    );
+    font-weight: 400;
+    width: 70%;
+    min-width: 50rem;
+    font-size: 1.8rem;
+    padding: 0.8rem 2rem;
+  }
 }
