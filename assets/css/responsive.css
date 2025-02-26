@@ -306,6 +306,69 @@
     }
   }
 
+  .saleSection::before {
+    z-index: -9;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      to right top,
+      #201622,
+      #1c161f,
+      #19161c,
+      #161518,
+      #141414
+    );
+  }
+  .saleSection {
+    z-index: 9999;
+    position: relative;
+    top: 0;
+    padding: 2rem 3rem;
+    width: 100%;
+    > .sectionContent {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 4rem;
+      margin-top: 4rem;
+      padding-bottom: 3rem;
+      & .saleCard {
+        position: relative;
+        width: 40%;
+        > .priceTag {
+          background-color: transparent;
+          font-size: 1.3rem;
+          > .price {
+            border-bottom-right-radius: 2px;
+            border-top-right-radius: 2px;
+            padding: 0.5rem;
+          }
+          > .off {
+            border-bottom-left-radius: 2px;
+            border-top-left-radius: 2px;
+            padding: 0.5rem;
+          }
+        }
+        > img {
+          height: 18rem;
+        }
+        > .gameName {
+          padding: 0.5rem 0.5rem;
+          font-family: "Ubuntu", serif;
+          font-size: 1.3rem;
+          color: #fff;
+          text-align: center;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+  }
   .sectionHeading {
     background-image: linear-gradient(
       to right,
@@ -320,6 +383,6 @@
     width: 35rem;
     min-width: 80%;
     font-size: 1.8rem;
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 1.5rem;
   }
 }

@@ -189,7 +189,7 @@
       position: relative;
       width: 16%;
       > .priceTag {
-        background-color: #fff;
+        background-color: transparent;
         position: absolute;
         top: -0.5rem;
         left: -0.5rem;
@@ -198,6 +198,8 @@
         font-family: "Inter", serif;
         font-size: 1.3rem;
         > .price {
+          border-bottom-right-radius: 0.3rem;
+          border-top-right-radius: 0.3rem;
           padding: 0.8rem;
           background-image: linear-gradient(
             to bottom,
@@ -210,6 +212,8 @@
           color: #fff;
         }
         > .off {
+          border-bottom-left-radius: 0.3rem;
+          border-top-left-radius: 0.3rem;
           padding: 1rem;
           background-image: linear-gradient(
             to bottom,
