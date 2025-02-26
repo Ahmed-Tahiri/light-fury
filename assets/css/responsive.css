@@ -89,7 +89,7 @@
             flex-direction: row-reverse;
             gap: 1rem;
             > #searchBox {
-              width: 25rem;
+              width: 15rem;
               background-color: transparent;
               border: 0.2rem solid #fff;
               border-radius: 2rem;
@@ -121,7 +121,7 @@
           }
         }
         .drop_down_menu {
-          margin-right: 5rem;
+          margin-right: 1.5rem;
           position: relative;
           top: 0;
           display: flex;
@@ -242,7 +242,7 @@
       > .sliderMainContainer {
         margin: 3rem 0;
         width: 100%;
-        height: 30rem;
+        height: 20rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -258,7 +258,7 @@
             content: "";
             position: absolute;
             width: 100%;
-            height: 100%;
+            height: 20rem;
             background-image: linear-gradient(
               to top,
               #ad00d085,
