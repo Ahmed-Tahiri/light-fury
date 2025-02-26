@@ -41,3 +41,9 @@ body {
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
 }
+.flex {
+  display: flex !important;
+}
+.none {
+  display: none !important;
+}
