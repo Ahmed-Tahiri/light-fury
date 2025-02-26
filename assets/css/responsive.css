@@ -33,9 +33,9 @@
           text-decoration: none;
           > .square {
             position: absolute;
-            height: 30px;
-            width: 30px;
-            border: 0.3rem solid #fff;
+            height: 20px;
+            width: 20px;
+            border: 0.2rem solid #fff;
             position: absolute;
             transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
@@ -47,7 +47,7 @@
             left: 0;
           }
           > .logoSquare2 {
-            left: 2em;
+            left: 1.3em;
           }
         }
         > .navUl {
@@ -88,7 +88,7 @@
             flex-direction: row-reverse;
             gap: 1rem;
             > #searchBox {
-              width: 15rem;
+              width: 12rem;
               background-color: transparent;
               border: 0.2rem solid #fff;
               border-radius: 2rem;
@@ -96,7 +96,7 @@
               -moz-border-radius: 2rem;
               -ms-border-radius: 2rem;
               -o-border-radius: 2rem;
-              padding: 0.7rem 2rem;
+              padding: 0.5rem 2rem;
               font-family: "Ubuntu", serif;
               font-size: 1.5rem;
               color: #fff;
