@@ -1,0 +1,388 @@
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .header {
+    > .navbar {
+      padding: 2rem 5rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      > .links {
+        max-width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        > .hamburger {
+          display: none;
+        }
+        > .homeLogo {
+          margin-right: 2rem;
+          height: 70px;
+          width: 76px;
+          > .square {
+            height: 37px;
+            width: 37px;
+          }
+          > .logoSquare2 {
+            left: 2.3em;
+          }
+        }
+        > .navUl {
+          display: flex;
+          flex-direction: row;
+          gap: 3rem;
+          > li {
+            list-style: none;
+            > a::before {
+              left: 0;
+              position: absolute;
+              content: "";
+              bottom: -0.3rem;
+              width: 0%;
+              height: 0.2rem;
+              background-color: #fff;
+              border-radius: 0.1rem;
+              -webkit-border-radius: 0.1rem;
+              -moz-border-radius: 0.1rem;
+              -ms-border-radius: 0.1rem;
+              -o-border-radius: 0.1rem;
+              transition: all 0.2s linear;
+              -webkit-transition: all 0.2s linear;
+              -moz-transition: all 0.2s linear;
+              -ms-transition: all 0.2s linear;
+              -o-transition: all 0.2s linear;
+            }
+
+            > a:hover::before {
+              width: 100%;
+            }
+            > a {
+              position: relative;
+              text-decoration: none;
+              font-size: 1.8rem;
+              text-transform: uppercase;
+              letter-spacing: 0rem;
+              color: #fff;
+              &:hover {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+      > .other {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        min-width: 40%;
+        max-width: 30%;
+        > .searchDiv {
+          > form {
+            display: flex;
+            gap: 1rem;
+            > #searchBox {
+              width: 18rem;
+              background-color: transparent;
+              border: 0.2rem solid #fff;
+              border-radius: 2rem;
+              -webkit-border-radius: 2rem;
+              -moz-border-radius: 2rem;
+              -ms-border-radius: 2rem;
+              -o-border-radius: 2rem;
+              padding: 0.7rem 2rem;
+              font-family: "Ubuntu", serif;
+              font-size: 1.6rem;
+              color: #fff;
+              outline: none;
+              &:focus {
+                outline-color: #cccccc;
+                border: 0.35rem solid #cccccc;
+              }
+            }
+            > #searchBtn {
+              cursor: pointer;
+              background: transparent;
+              font-size: 2rem;
+              border: none;
+              color: #fff;
+              transform: scaleX(-1) rotate(10deg);
+              -webkit-transform: scaleX(-1) rotate(10deg);
+              -moz-transform: scaleX(-1) rotate(10deg);
+              -ms-transform: scaleX(-1) rotate(10deg);
+              -o-transform: scaleX(-1) rotate(10deg);
+            }
+          }
+        }
+        .drop_down_menu {
+          position: relative;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          z-index: 3;
+          padding: 0.5rem 2rem;
+          background-color: transparent;
+          border-radius: 1rem;
+          -webkit-border-radius: 1rem;
+          -moz-border-radius: 1rem;
+          -ms-border-radius: 1rem;
+          -o-border-radius: 1rem;
+
+          & .text_content {
+            background-color: transparent;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+              rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            height: inherit;
+            width: inherit;
+            z-index: 9999;
+            & .select {
+              font-size: 1.8rem;
+              width: 100%;
+              display: flex;
+              justify-content: space-evenly;
+              gap: 0.5rem;
+              align-items: center;
+              color: #fff;
+              transition: all 0.1s linear;
+              -webkit-transition: all 0.1s linear;
+              -moz-transition: all 0.1s linear;
+              -ms-transition: all 0.1s linear;
+              -o-transition: all 0.1s linear;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+
+            & .options {
+              position: absolute;
+              top: 0;
+              display: none;
+              top: 3rem;
+              width: 100%;
+              & li {
+                margin: 0.5rem 0;
+                list-style: none;
+                color: #fff;
+                transition: all 0.1s linear;
+                -webkit-transition: all 0.1s linear;
+                -moz-transition: all 0.1s linear;
+                -ms-transition: all 0.1s linear;
+                -o-transition: all 0.1s linear;
+                font-size: 1.8rem;
+                &:hover {
+                  background-color: #00000071;
+                  cursor: pointer;
+                  border-radius: 0.5rem;
+                  -webkit-border-radius: 0.5rem;
+                  -moz-border-radius: 0.5rem;
+                  -ms-border-radius: 0.5rem;
+                  -o-border-radius: 0.5rem;
+                  padding: 0 0.5rem;
+                }
+              }
+            }
+            & .show {
+              display: block;
+            }
+          }
+        }
+
+        .text_content {
+          border-radius: 1rem;
+          -webkit-border-radius: 1rem;
+          -moz-border-radius: 1rem;
+          -ms-border-radius: 1rem;
+          -o-border-radius: 1rem;
+        }
+        > #loginBtn {
+          background: transparent;
+          border: 0.2rem solid #fff;
+          border-radius: 200px;
+          -webkit-border-radius: 200px;
+          -moz-border-radius: 200px;
+          -ms-border-radius: 200px;
+          -o-border-radius: 200px;
+          padding: 0.4rem 2.2rem;
+          > a {
+            text-decoration: none;
+            color: #fff;
+            font-family: "Ubuntu", serif;
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    .landingPage {
+      padding: 2rem 15rem;
+      margin-top: 5rem;
+      > .sliderMainContainer {
+        margin: 4rem 0;
+        height: 50rem;
+        gap: 3.5rem;
+        > .sliderContainer {
+          .slide {
+            > .slideText {
+              font-size: 1.8rem;
+            }
+          }
+
+          .controlBtn {
+            padding: 1.8rem 0.5rem;
+            font-size: 2.6rem;
+          }
+        }
+      }
+    }
+  }
+  .saleSection {
+    padding: 4rem 15rem;
+    > .sectionContent {
+      gap: 3.5rem;
+      & .saleCard {
+        width: 20%;
+        > .priceTag {
+          background-color: transparent;
+          font-size: 1.2rem;
+          > .price {
+            border-bottom-right-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+            padding: 0.8rem;
+          }
+          > .off {
+            border-bottom-left-radius: 0.25rem;
+            border-top-left-radius: 0.25rem;
+            padding: 0.8rem;
+          }
+        }
+        > img {
+          height: 27rem;
+        }
+        > .gameName {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  .gamesSection {
+    width: 100%;
+    padding: 4rem 15rem;
+    .keywordsSection {
+      > .keyword {
+        text-decoration: none;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 200px;
+        -webkit-border-radius: 200px;
+        -moz-border-radius: 200px;
+        -ms-border-radius: 200px;
+        -o-border-radius: 200px;
+        padding: 0.5rem 2.7rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-family: "Ubuntu", serif;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transition: all 0.15s linear;
+          -webkit-transition: all 0.15s linear;
+          -moz-transition: all 0.15s linear;
+          -ms-transition: all 0.15s linear;
+          -o-transition: all 0.15s linear;
+        }
+      }
+    }
+    > .gamesContainer {
+      column-gap: 1rem;
+      > .gameCard {
+        width: 49%;
+        > .gameName {
+          min-width: 64%;
+          display: flex;
+          align-items: center;
+          padding: 1rem 2rem;
+          font-size: 1.5rem;
+        }
+        > .price {
+          padding: 0.5rem;
+          min-width: 7rem;
+        }
+      }
+    }
+  }
+  .footer {
+    & .copyrightText {
+      font-size: 1.4rem;
+    }
+    & .footerLinks {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: right;
+      gap: 1.2rem;
+      > li {
+        list-style: none;
+        > a::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: -0.3rem;
+          width: 0%;
+          height: 0.2rem;
+          background-color: #fff;
+          border-radius: 0.1rem;
+          -webkit-border-radius: 0.1rem;
+          -moz-border-radius: 0.1rem;
+          -ms-border-radius: 0.1rem;
+          -o-border-radius: 0.1rem;
+          transition: all 0.2s linear;
+          -webkit-transition: all 0.2s linear;
+          -moz-transition: all 0.2s linear;
+          -ms-transition: all 0.2s linear;
+          -o-transition: all 0.2s linear;
+        }
+        > a {
+          position: relative;
+          text-align: right;
+          text-decoration: none;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          letter-spacing: 0rem;
+          color: #fff;
+          &:hover {
+            font-weight: 500;
+          }
+        }
+        > a:hover::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .sectionHeading {
+    background-image: linear-gradient(
+      to right,
+      #bd00e385,
+      #ad00d054,
+      #7a00784a,
+      #63004f3f,
+      #63004f00,
+      #14141400
+    );
+    font-weight: 400;
+    width: 90rem;
+    min-width: 80%;
+    font-size: 1.9rem;
+    padding: 1rem 1.5rem;
+  }
+}
