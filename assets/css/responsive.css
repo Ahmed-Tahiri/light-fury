@@ -472,16 +472,16 @@
     background-image: linear-gradient(
       to right,
       #bd00e385,
-      #ad00d085,
+      #ad00d054,
       #7a00784a,
       #63004f3f,
       #63004f00,
       #14141400
     );
     font-weight: 400;
-    width: 35rem;
+    width: 40rem;
     min-width: 80%;
     font-size: 1.8rem;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 1rem;
   }
 }
