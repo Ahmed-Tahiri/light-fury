@@ -75,9 +75,8 @@
       > .other {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
         align-items: center;
-        gap: 1rem;
+        gap: 0rem;
         min-width: 100%;
         width: 100%;
         max-width: 100%;
@@ -208,6 +207,7 @@
           -o-border-radius: 1rem;
         }
         > #loginBtn {
+          margin-left: 1.5rem;
           background: transparent;
           border: 0.2rem solid #fff;
           border-radius: 200px;
