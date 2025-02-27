@@ -15,9 +15,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/navbar.css">
     <link rel="stylesheet" href="/assets/css/settings.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/mobileResponsive.css">
     <link rel="stylesheet" href="/assets/css/tabletResponsive.css">
     <link rel="stylesheet" href="/assets/css/smallDesktopResponsive.css">
@@ -27,61 +25,28 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="links">
-                <a class="homeLogo" href="/">
-                    <span class="square logoSquare1"></span>
-                    <span class="square logoSquare2"></span>
-                </a>
-                <ul class="navUl">
-                    <li><a href="/store.html">Store</a></li>
-                    <li><a href="#">Premium</a></li>
-                    <li><a href="#">Customization</a></li>
-                    <li><a href="/settings.html">Settings</a></li>
-                </ul>
-                <button type="btn" class="hamburger"><i class="fa-solid fa-bars"></i></button>
-            </div>
-            <div class="other">
-                <div class="searchDiv">
-                    <form action="" method="post">
-                        <button id="searchBtn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <input type="search" name="searchBox" id="searchBox" placeholder="search">
-                    </form>
-                </div>
-                <div class="drop_down_menu">
-                    <div class="text_content">
-                        <div class="select">
-                            <span class="selected">Language</span>
-                            <div class="caret"><i class="fa-solid fa-chevron-down"></i></div>
-                        </div>
-                        <ul class="options">
-                            <li class="option" value="Eng">Eng</li>
-                            <li class="option" value="Fr">Fr</li>
-                            <li class="option" value="De">De</li>
-                        </ul>
-                    </div>
-                </div>
-                <button id="loginBtn" type="button"><a href="#">Login</a></button>
-            </div>
-        </nav>
-    </header>
-
     <main class="main">
-
+        <div class="settings">
+            <div class="sideBar">
+                <div class="settingSection">
+                    <h4 class="settingSectionHeading">User Settings</h4>
+                    <ul class="sidebarUl">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">System</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Overlay</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detailSetting">
+                <h1>Details</h1>
+            </div>
+        </div>
     </main>
-    <footer class="footer">
-        <p class="copyrightText"></p>
-        <ul class="footerLinks">
-            <li><a href="/store.html">Store</a></li>
-            <li><a href="#">Premium</a></li>
-            <li><a href="#">Customization</a></li>
-            <li><a href="/settings.html">Settings</a></li>
-        </ul>
     </footer>
     <script src="/assets/javascript/script.js"></script>
     <script src="/assets/javascript/createElement.js"></script>
-    <script src="/assets/javascript/hamburger.js"></script>
+
 </body>
 
 </html>

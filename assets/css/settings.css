@@ -1,6 +1,87 @@
 .main {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  > .settings::before {
+    z-index: -9;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #292327;
+  }
+
+  > .settings {
+    z-index: 9999;
+    position: relative;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    > .sideBar {
+      border-right: 0.7rem solid #191819;
+      width: 15%;
+      height: 100vh;
+      min-height: 73rem;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      padding: 1rem 2rem;
+      > .settingSection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        border-bottom: 0.1rem solid #c1c1c12e;
+        > .settingSectionHeading {
+          width: 100%;
+          color: #a0a0a0;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-family: "Inter", serif;
+          padding: 0 0.5rem;
+        }
+        > .sidebarUl {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          justify-content: space-evenly;
+          gap: 0.5rem;
+          margin-bottom: 0.5rem;
+          & li {
+            width: 100%;
+            list-style: none;
+            & a {
+              display: block;
+              width: 100%;
+              font-size: 1.6rem;
+              font-family: "Inter", serif;
+              color: #fff;
+              text-decoration: none;
+              padding: 1rem 0.5rem;
+
+              &:hover {
+                background-color: #d2d2d21e;
+                border-radius: 0.5rem;
+                -webkit-border-radius: 0.5rem;
+                -moz-border-radius: 0.5rem;
+                -ms-border-radius: 0.5rem;
+                -o-border-radius: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .detailSetting {
+      width: 85%;
+      height: 100vh;
+      min-height: 73rem;
+    }
+  }
 }
