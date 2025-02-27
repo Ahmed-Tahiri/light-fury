@@ -549,7 +549,7 @@
         width: 30% !important;
         gap: 1rem !important;
         > img {
-          height: 27rem !important;
+          height: 22rem !important;
         }
         > .characterDetails {
           width: 100%;
@@ -575,7 +575,7 @@
           -o-border-radius: 0.2rem !important;
           > .buyBtn {
             font-size: 1.9rem !important;
-            border-right: 1.7px solid #fff !important;
+            border-right: none !important;
           }
           > .previewText {
             font-size: 1.9rem !important;

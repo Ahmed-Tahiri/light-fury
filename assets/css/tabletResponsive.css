@@ -543,10 +543,10 @@
       gap: 4rem;
       align-items: start !important;
       > .characterCard {
-        width: 40% !important;
+        width: 35% !important;
         gap: 1rem !important;
         > img {
-          height: 25rem !important;
+          height: 20rem !important;
         }
         > .characterDetails {
           width: 100%;
@@ -572,10 +572,20 @@
           -o-border-radius: 0.2rem !important;
           > .buyBtn {
             font-size: 1.5rem !important;
-            border-right: 1.5px solid #fff !important;
+            border-right: none !important;
+            border-radius: 0.7rem !important;
+            -webkit-border-radius: 0.7rem !important;
+            -moz-border-radius: 0.7rem !important;
+            -ms-border-radius: 0.7rem !important;
+            -o-border-radius: 0.7rem !important;
           }
           > .previewText {
             font-size: 1.5rem !important;
+            border-radius: 0.7rem !important;
+            -webkit-border-radius: 0.7rem !important;
+            -moz-border-radius: 0.7rem !important;
+            -ms-border-radius: 0.7rem !important;
+            -o-border-radius: 0.7rem !important;
           }
         }
       }
