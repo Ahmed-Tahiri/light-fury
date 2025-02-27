@@ -103,25 +103,26 @@
           text-transform: uppercase;
         }
         > .accountDetails {
+          padding: 2rem;
           display: flex;
           flex-direction: column;
           align-items: start;
           justify-content: center;
           width: 100%;
+          background-color: #272728;
+          border-radius: 0.7rem;
+          -webkit-border-radius: 0.7rem;
+          -moz-border-radius: 0.7rem;
+          -ms-border-radius: 0.7rem;
+          -o-border-radius: 0.7rem;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           > .profileDetails {
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-            padding: 2rem;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            border-radius: 0.7rem;
-            -webkit-border-radius: 0.7rem;
-            -moz-border-radius: 0.7rem;
-            -ms-border-radius: 0.7rem;
-            -o-border-radius: 0.7rem;
-            background-color: #272728;
+
             > .profile {
               width: 90%;
               display: flex;
@@ -191,6 +192,64 @@
               letter-spacing: 0.2rem;
               &:hover {
                 cursor: pointer;
+              }
+            }
+          }
+          > .profileSettings {
+            padding: 2rem;
+            margin-top: 3rem;
+            border-radius: 0.7rem;
+            -webkit-border-radius: 0.7rem;
+            -moz-border-radius: 0.7rem;
+            -ms-border-radius: 0.7rem;
+            -o-border-radius: 0.7rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            background-color: #343434;
+            > .profileSingleData {
+              display: flex;
+              width: 100%;
+              > .profileData {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                > .profileTextContent {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 0.5rem;
+                  width: 90%;
+                  > .label {
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    color: #a0a0a0;
+                  }
+                  > .attrData {
+                    color: #fff;
+                    font-size: 1.6rem;
+                    > span {
+                      color: #a0a0a0;
+                      margin-left: 0.1rem;
+                    }
+                  }
+                }
+                > .actionBtn {
+                  max-width: 10%;
+                  width: 7rem;
+                  height: 100%;
+                  background-color: #878787;
+                  border: none;
+                  color: #fff;
+                  border-radius: 0.2rem;
+                  -webkit-border-radius: 0.2rem;
+                  -moz-border-radius: 0.2rem;
+                  -ms-border-radius: 0.2rem;
+                  -o-border-radius: 0.2rem;
+                  font-family: "Inter", serif;
+                  font-weight: 500;
+                }
               }
             }
           }
