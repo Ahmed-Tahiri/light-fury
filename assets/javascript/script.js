@@ -11,6 +11,7 @@ options.forEach((option) => {
 })
 showAllBtn.addEventListener("click", (e) => {
     dropDownOption.classList.toggle("show");
+    dropDownOption.style.height = '200px';
 });
 
 let copyRight = document.querySelector('.copyrightText');
