@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/imgs/game-controller.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/system.css">
+    <link rel="stylesheet" href="./assets/css/settings.css">
+    <link rel="stylesheet" href="./assets/css/mobileResponsive.css">
+    <link rel="stylesheet" href="./assets/css/tabletResponsive.css">
+    <link rel="stylesheet" href="./assets/css/smallDesktopResponsive.css">
+    <link rel="stylesheet" href="./assets/css/mediumDesktopResponsive.css">
+    <link rel="stylesheet" href="./assets/css/largeDesktopResponsive.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Light Fury | Settings Page</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="links">
+                <a class="homeLogo" href="/">
+                    <span class="square logoSquare1"></span>
+                    <span class="square logoSquare2"></span>
+                </a>
+                <ul class="navUl">
+                    <li><a href="./store.html">Store</a></li>
+                    <li><a href="./premium.html">Premium</a></li>
+                    <li><a href="#">Customization</a></li>
+                    <li><a href="./settings.html">Settings</a></li>
+                </ul>
+                <button type="btn" class="hamburger"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="other">
+                <div class="searchDiv">
+                    <form action="" method="post">
+                        <button id="searchBtn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="search" name="searchBox" id="searchBox" placeholder="search">
+                    </form>
+                </div>
+                <div class="lanMenu">
+                    <div class="lanTextContent">
+                        <div class="selectLan">
+                            <span class="selectedLan">Language</span>
+                            <div class="caret"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <ul class="Lanoptions">
+                            <li>Eng</li>
+                            <li>Fr</li>
+                            <li>De</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button id="loginBtn" type="button"><a href="#">Login</a></button>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="mainContainer">
+            <div class="settings">
+                <div class="sideBar">
+                    <div class="settingSection">
+                        <h4 class="settingSectionHeading">User Settings</h4>
+                        <ul class="sidebarUl">
+                            <li><button type="button" id="myAccountBtn">My Account</button></li>
+                            <li><button type="button" id="SystemBtn">System</button></li>
+                            <li><button type="button">Privacy</button></li>
+                            <li><button type="button">Overlay</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <section>
+                    <div class="detailSetting" id="profileSetting">
+                        <div class="detailContent">
+                            <button class="settingBtn"><i class="fa-solid fa-sliders"></i></button>
+                            <h2 class="settingSubHeading">My Account</h2>
+                            <div class="accountDetails">
+                                <div class="profileDetails">
+                                    <div class="profile">
+                                        <div class="profileImg">
+                                            <img src="https://play-lh.googleusercontent.com/Sb5od0gQvJyuevITuUZ5Ko46WqFEBjPZlT7xIMfGWfbyaGCqF0nCXPJTa-poWuwSu-8=w526-h296-rw"
+                                                alt="Profile Picture">
+                                            <button type="button" class="addPicBtn"><img src="./assets/imgs/addImg.png"
+                                                    alt="Add Picture Button"></button>
+                                        </div>
+                                        <div class="profileText">
+                                            <p class="profileName">Deathly<span>#4974</span></p>
+                                            <img src="./assets/imgs/badge.png" alt="badge">
+                                        </div>
+                                    </div>
+                                    <button type="btn" class="dotBtn">...</button>
+                                </div>
+                                <div class="profileSettings">
+                                    <div class="profileSingleData">
+                                        <div class="profileData">
+                                            <div class="profileTextContent">
+                                                <p class="label">Username</p>
+                                                <p class="attrData">Deathly<span>#4974</span></p>
+                                            </div>
+                                            <button type="btn" class="actionBtn">Edit</button>
+                                        </div>
+                                    </div>
+                                    <div class="profileSingleData">
+                                        <div class="profileData">
+                                            <div class="profileTextContent">
+                                                <p class="label">Birth Date</p>
+                                                <p class="attrData">27 Feb, 1998</p>
+                                            </div>
+                                            <button type="btn" class="actionBtn">Edit</button>
+                                        </div>
+                                    </div>
+                                    <div class="profileSingleData">
+                                        <div class="profileData">
+                                            <div class="profileTextContent">
+                                                <p class="label">Password</p>
+                                                <p class="attrData">*******</p>
+                                            </div>
+                                            <button type="btn" class="actionBtn">Edit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="detailSetting" id="systemSetting">
+                        <div class="detailContent">
+                            <button class="settingBtn" id="systemSettingBtn2"><i
+                                    class="fa-solid fa-sliders"></i></button>
+                            <h2 class="settingSubHeading">System</h2>
+                            <div class="volumeSlider">
+                                <h2 class="sectionSubHeading">Volume</h2>
+                                <div class="volumeContainer">
+                                    <p class="speakerIcon"></p>
+                                    <input type="range" min="0" max="100" value="20" class="slider" id="volumeSlider">
+                                </div>
+                            </div>
+                            <div class="languageModelSelector">
+                                <h2 class="sectionSubHeading">Language</h2>
+                                <div class="language_menu">
+                                    <div class="language_text_content">
+                                        <div class="selectDiv">
+                                            <span class="selected">Show All Languages</span>
+                                            <div class="caret"><i class="fa-solid fa-chevron-down"></i></div>
+                                        </div>
+                                        <ul class="language_options">
+                                            <li>
+                                                <p>English</p>
+                                                <i class="fa-solid fa-circle-check lanTick"></i>
+                                            </li>
+                                            <li>
+                                                <p>Spanish (Español)</p> <i
+                                                    class="fa-solid fa-circle-check lanTick"></i>
+                                            </li>
+                                            <li>
+                                                <p>French (Français)</p> <i
+                                                    class="fa-solid fa-circle-check lanTick"></i>
+                                            </li>
+                                            <li>
+                                                <p>German (Deutsch)</p> <i class="fa-solid fa-circle-check lanTick"></i>
+                                            </li>
+                                            <li>
+                                                <p>Chinese (中文 - Simplified)</p> <i
+                                                    class="fa-solid fa-circle-check lanTick"></i>
+                                            </li>
+                                            <li>
+                                                <p>Japanese (日本語)</p> <i class="fa-solid fa-circle-check lanTick"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="FPSModelSelector">
+                                <h2 class="sectionSubHeading">FPS (Frames Per Second)</h2>
+                                <div class="FPS_menu">
+                                    <div class="FPS_text_content">
+                                        <div class="selectFPS">
+                                            <span class="selectedFPS">Show All FPS</span>
+                                            <div class="caret"><i class="fa-solid fa-chevron-down"></i></div>
+                                        </div>
+                                        <ul class="FPS_options">
+                                            <li>
+                                                <p>20FPS</p><i class="fa-solid fa-circle-check fpsTick"></i>
+                                            </li>
+                                            <li>
+                                                <p>30FPS</p><i class="fa-solid fa-circle-check fpsTick"></i>
+                                            </li>
+                                            <li>
+                                                <p>40FPS</p><i class="fa-solid fa-circle-check fpsTick"></i>
+                                            </li>
+                                            <li>
+                                                <p>60FPS</p><i class="fa-solid fa-circle-check fpsTick"></i>
+                                            </li>
+                                            <li>
+                                                <p>120FPS</p><i class="fa-solid fa-circle-check fpsTick"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    </footer>
+    <script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/createElement.js"></script>
+    <script src="./assets/javascript/dropDown.js"></script>
+    <script src="./assets/javascript/volume.js"></script>
+    <script src="./assets/javascript/sideBar.js"></script>
+    <script src="./assets/javascript/hamburger.js"></script>
+    <script src="./assets/javascript/dropDown.js"></script>
+</body>
+
+</html>

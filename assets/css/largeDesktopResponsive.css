@@ -1,0 +1,664 @@
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .header {
+    > .navbar {
+      padding: 2rem 5rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      > .links {
+        max-width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        > .hamburger {
+          display: none;
+        }
+        > .homeLogo {
+          margin-right: 2rem;
+          height: 70px;
+          width: 76px;
+          > .square {
+            height: 37px;
+            width: 37px;
+          }
+          > .logoSquare2 {
+            left: 2.3em;
+          }
+        }
+        > .navUl {
+          display: flex;
+          flex-direction: row;
+          gap: 3rem;
+          > li {
+            list-style: none;
+            > a::before {
+              left: 0;
+              position: absolute;
+              content: "";
+              bottom: -0.3rem;
+              width: 0%;
+              height: 0.2rem;
+              background-color: #fff;
+              border-radius: 0.1rem;
+              -webkit-border-radius: 0.1rem;
+              -moz-border-radius: 0.1rem;
+              -ms-border-radius: 0.1rem;
+              -o-border-radius: 0.1rem;
+              transition: all 0.2s linear;
+              -webkit-transition: all 0.2s linear;
+              -moz-transition: all 0.2s linear;
+              -ms-transition: all 0.2s linear;
+              -o-transition: all 0.2s linear;
+            }
+
+            > a:hover::before {
+              width: 100%;
+            }
+            > a {
+              position: relative;
+              text-decoration: none;
+              font-size: 1.8rem;
+              text-transform: uppercase;
+              letter-spacing: 0rem;
+              color: #fff;
+              &:hover {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+      > .other {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        min-width: 40%;
+        max-width: 30%;
+        > .searchDiv {
+          > form {
+            display: flex;
+            gap: 1rem;
+            > #searchBox {
+              width: 18rem;
+              background-color: transparent;
+              border: 0.2rem solid #fff;
+              border-radius: 2rem;
+              -webkit-border-radius: 2rem;
+              -moz-border-radius: 2rem;
+              -ms-border-radius: 2rem;
+              -o-border-radius: 2rem;
+              padding: 0.7rem 2rem;
+              font-family: "Ubuntu", serif;
+              font-size: 1.6rem;
+              color: #fff;
+              outline: none;
+              &:focus {
+                outline-color: #cccccc;
+                border: 0.35rem solid #cccccc;
+              }
+            }
+            > #searchBtn {
+              cursor: pointer;
+              background: transparent;
+              font-size: 2rem;
+              border: none;
+              color: #fff;
+              transform: scaleX(-1) rotate(10deg);
+              -webkit-transform: scaleX(-1) rotate(10deg);
+              -moz-transform: scaleX(-1) rotate(10deg);
+              -ms-transform: scaleX(-1) rotate(10deg);
+              -o-transform: scaleX(-1) rotate(10deg);
+            }
+          }
+        }
+
+        > #loginBtn {
+          background: transparent;
+          border: 0.2rem solid #fff;
+          border-radius: 200px;
+          -webkit-border-radius: 200px;
+          -moz-border-radius: 200px;
+          -ms-border-radius: 200px;
+          -o-border-radius: 200px;
+          padding: 0.4rem 2.2rem;
+          > a {
+            text-decoration: none;
+            color: #fff;
+            font-family: "Ubuntu", serif;
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    .landingPage {
+      padding: 2rem 15rem;
+      margin-top: 5rem;
+      > .sliderMainContainer {
+        margin: 4rem 0;
+        height: 50rem;
+        gap: 3.5rem;
+        > .sliderContainer {
+          .slide {
+            > .slideText {
+              font-size: 1.8rem;
+            }
+          }
+
+          .controlBtn {
+            padding: 1.8rem 0.5rem;
+            font-size: 2.6rem;
+          }
+        }
+      }
+    }
+  }
+  .saleSection {
+    padding: 4rem 15rem;
+    > .sectionContent {
+      gap: 3.5rem;
+      & .saleCard {
+        width: 20%;
+        > .priceTag {
+          background-color: transparent;
+          font-size: 1.2rem;
+          > .price {
+            border-bottom-right-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+            padding: 0.8rem;
+          }
+          > .off {
+            border-bottom-left-radius: 0.25rem;
+            border-top-left-radius: 0.25rem;
+            padding: 0.8rem;
+          }
+        }
+        > img {
+          height: 27rem;
+        }
+        > .gameName {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  .gamesSection {
+    width: 100%;
+    padding: 4rem 15rem;
+    .keywordsSection {
+      > .keyword {
+        text-decoration: none;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 200px;
+        -webkit-border-radius: 200px;
+        -moz-border-radius: 200px;
+        -ms-border-radius: 200px;
+        -o-border-radius: 200px;
+        padding: 0.5rem 2.7rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-family: "Ubuntu", serif;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transition: all 0.15s linear;
+          -webkit-transition: all 0.15s linear;
+          -moz-transition: all 0.15s linear;
+          -ms-transition: all 0.15s linear;
+          -o-transition: all 0.15s linear;
+        }
+      }
+    }
+    > .gamesContainer {
+      column-gap: 1rem;
+      > .gameCard {
+        width: 49%;
+        > .gameName {
+          min-width: 64%;
+          display: flex;
+          align-items: center;
+          padding: 1rem 2rem;
+          font-size: 1.5rem;
+        }
+        > .price {
+          padding: 0.5rem;
+          min-width: 7rem;
+        }
+      }
+    }
+  }
+  .footer {
+    & .copyrightText {
+      font-size: 1.4rem;
+    }
+    & .footerLinks {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: right;
+      gap: 1.2rem;
+      > li {
+        list-style: none;
+        > a::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: -0.3rem;
+          width: 0%;
+          height: 0.2rem;
+          background-color: #fff;
+          border-radius: 0.1rem;
+          -webkit-border-radius: 0.1rem;
+          -moz-border-radius: 0.1rem;
+          -ms-border-radius: 0.1rem;
+          -o-border-radius: 0.1rem;
+          transition: all 0.2s linear;
+          -webkit-transition: all 0.2s linear;
+          -moz-transition: all 0.2s linear;
+          -ms-transition: all 0.2s linear;
+          -o-transition: all 0.2s linear;
+        }
+        > a {
+          position: relative;
+          text-align: right;
+          text-decoration: none;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          letter-spacing: 0rem;
+          color: #fff;
+          &:hover {
+            font-weight: 500;
+          }
+        }
+        > a:hover::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .sectionHeading {
+    background-image: linear-gradient(
+      to right,
+      #bd00e385,
+      #ad00d054,
+      #7a00784a,
+      #63004f3f,
+      #63004f00,
+      #14141400
+    );
+    font-weight: 400;
+    width: 90rem;
+    min-width: 80%;
+    font-size: 1.9rem;
+    padding: 1rem 1.5rem;
+  }
+  .store {
+    width: 100%;
+    padding: 4rem 12rem !important;
+
+    > .storeHeader {
+      > .storeHeading {
+        font-size: 4.7rem;
+        width: 60% !important;
+        font-family: "Kanit", serif;
+        line-height: 4.5rem !important;
+      }
+      > .seeAllBtn {
+        padding: 0.7rem 1.4rem !important;
+        font-size: 1.7rem !important;
+        border-radius: 0.4rem !important;
+        -webkit-border-radius: 0.4rem !important;
+        -moz-border-radius: 0.4rem !important;
+        -ms-border-radius: 0.4rem !important;
+        -o-border-radius: 0.4rem !important;
+      }
+    }
+    .storeMainContent {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 8rem;
+      gap: 4rem;
+      > .characterCard {
+        background-color: #252325;
+        width: 23% !important;
+        border: 0.3rem solid #452741;
+        border-radius: 0.8rem;
+        -webkit-border-radius: 0.8rem;
+        -moz-border-radius: 0.8rem;
+        -ms-border-radius: 0.8rem;
+        -o-border-radius: 0.8rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 1.5rem;
+        > img {
+          height: 21rem !important;
+        }
+        > .characterDetails {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 0.2rem !important;
+          > .skinName {
+            font-size: 2.3rem !important;
+          }
+          .characterName {
+            font-family: "Ubuntu", serif;
+            color: #7b7b7b;
+            font-size: 1.4rem !important;
+          }
+        }
+        > .purchaseOption {
+          margin-top: 1rem !important;
+          height: 4rem !important;
+          border-radius: 0.3rem;
+          -webkit-border-radius: 0.3rem;
+          -moz-border-radius: 0.3rem;
+          -ms-border-radius: 0.3rem;
+          -o-border-radius: 0.3rem;
+          > .buyBtn {
+            border: none !important;
+            font-size: 1.8rem !important;
+            border-radius: 0.8rem !important;
+            -webkit-border-radius: 0.8rem !important;
+            -moz-border-radius: 0.8rem !important;
+            -ms-border-radius: 0.8rem !important;
+            -o-border-radius: 0.8rem !important;
+          }
+          > .previewText {
+            font-size: 1.8rem !important;
+            border-radius: 0.8rem !important;
+            -webkit-border-radius: 0.8rem !important;
+            -moz-border-radius: 0.8rem !important;
+            -ms-border-radius: 0.8rem !important;
+            -o-border-radius: 0.8rem !important;
+          }
+        }
+      }
+    }
+  }
+  .premium {
+    padding: 2rem 2rem !important;
+    .premiumContent {
+      > .premiumBanner {
+        min-height: 50rem !important;
+        height: 50rem !important;
+        border-radius: 1.3rem !important;
+        -webkit-border-radius: 1.3rem !important;
+        -moz-border-radius: 1.3rem !important;
+        -ms-border-radius: 1.3rem !important;
+        -o-border-radius: 1.3rem !important;
+        & .textContainer {
+          > .mainHeading {
+            font-size: 3.8rem !important;
+          }
+          > .text {
+            font-size: 1.7rem !important;
+          }
+        }
+        & .contentContainer {
+          > .mainButtonsContainer {
+            > .purchaseBtn {
+              width: 40%;
+              height: 4.8rem !important;
+              font-size: 1.6rem !important;
+              font-weight: 500;
+              & i {
+                font-size: 1.9rem !important;
+              }
+            }
+          }
+          > .largeBtnsContainer {
+            > .btnsContainer {
+              padding: 0 11rem !important;
+              > .btnsSpaceContainer {
+                width: 75% !important;
+              }
+              > .btnContainer {
+                width: 25% !important;
+                height: 12rem !important;
+                > .largeBtn {
+                  position: absolute;
+                  width: 8rem !important;
+                  height: 8rem !important;
+                  border: none;
+                  font-size: 4.7rem !important;
+                  background-color: transparent;
+                  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                  color: #fff;
+                  &:hover {
+                    cursor: pointer;
+                  }
+                }
+                > .largeBtn:nth-child(1) {
+                  right: 1rem !important;
+                }
+                > .largeBtn:nth-child(2) {
+                  right: 6.5rem !important;
+                }
+                > .largeBtn:nth-child(3) {
+                  right: 12rem !important;
+                }
+              }
+            }
+            > .actionsContainer {
+              width: 100%;
+              display: flex;
+              justify-content: start;
+              gap: 2rem;
+              height: 6rem;
+              margin-left: 5rem;
+              > .actionBtn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+                background-color: #343434;
+                border: none;
+                color: #fff;
+                height: 4rem;
+                width: 4rem;
+                font-size: 1.5rem;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                &:hover {
+                  transition: all 0.2s linear;
+                  -webkit-transition: all 0.2s linear;
+                  -moz-transition: all 0.2s linear;
+                  -ms-transition: all 0.2s linear;
+                  -o-transition: all 0.2s linear;
+                  transform: scale(1.1);
+                  -webkit-transform: scale(1.1);
+                  -moz-transform: scale(1.1);
+                  -ms-transform: scale(1.1);
+                  -o-transform: scale(1.1);
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+      > .includesSection {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        > .inlcudeSectionHeading {
+          font-family: "Inter", serif;
+          color: #fff;
+          font-size: 3rem;
+          font-weight: 600 !important;
+        }
+        > .includeBtn {
+          > button {
+            font-weight: 600 !important;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1550px) {
+  .header {
+    > .navbar {
+      padding: 2rem 5rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      > .links {
+        max-width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        > .hamburger {
+          display: none;
+        }
+        > .homeLogo {
+          margin-right: 2rem;
+          height: 70px;
+          width: 76px;
+          > .square {
+            height: 37px;
+            width: 37px;
+          }
+          > .logoSquare2 {
+            left: 2.3em;
+          }
+        }
+        > .navUl {
+          display: flex;
+          flex-direction: row;
+          gap: 3rem;
+          > li {
+            list-style: none;
+            > a::before {
+              left: 0;
+              position: absolute;
+              content: "";
+              bottom: -0.3rem;
+              width: 0%;
+              height: 0.2rem;
+              background-color: #fff;
+              border-radius: 0.1rem;
+              -webkit-border-radius: 0.1rem;
+              -moz-border-radius: 0.1rem;
+              -ms-border-radius: 0.1rem;
+              -o-border-radius: 0.1rem;
+              transition: all 0.2s linear;
+              -webkit-transition: all 0.2s linear;
+              -moz-transition: all 0.2s linear;
+              -ms-transition: all 0.2s linear;
+              -o-transition: all 0.2s linear;
+            }
+
+            > a:hover::before {
+              width: 100%;
+            }
+            > a {
+              position: relative;
+              text-decoration: none;
+              font-size: 1.8rem;
+              text-transform: uppercase;
+              letter-spacing: 0rem;
+              color: #fff;
+              &:hover {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+      > .other {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        min-width: 40%;
+        max-width: 30%;
+        > .searchDiv {
+          > form {
+            display: flex;
+            gap: 1rem;
+            > #searchBox {
+              width: 18rem;
+              background-color: transparent;
+              border: 0.2rem solid #fff;
+              border-radius: 2rem;
+              -webkit-border-radius: 2rem;
+              -moz-border-radius: 2rem;
+              -ms-border-radius: 2rem;
+              -o-border-radius: 2rem;
+              padding: 0.7rem 2rem;
+              font-family: "Ubuntu", serif;
+              font-size: 1.6rem;
+              color: #fff;
+              outline: none;
+              &:focus {
+                outline-color: #cccccc;
+                border: 0.35rem solid #cccccc;
+              }
+            }
+            > #searchBtn {
+              cursor: pointer;
+              background: transparent;
+              font-size: 2rem;
+              border: none;
+              color: #fff;
+              transform: scaleX(-1) rotate(10deg);
+              -webkit-transform: scaleX(-1) rotate(10deg);
+              -moz-transform: scaleX(-1) rotate(10deg);
+              -ms-transform: scaleX(-1) rotate(10deg);
+              -o-transform: scaleX(-1) rotate(10deg);
+            }
+          }
+        }
+
+        > #loginBtn {
+          background: transparent;
+          border: 0.2rem solid #fff;
+          border-radius: 200px;
+          -webkit-border-radius: 200px;
+          -moz-border-radius: 200px;
+          -ms-border-radius: 200px;
+          -o-border-radius: 200px;
+          padding: 0.4rem 2.2rem;
+          > a {
+            text-decoration: none;
+            color: #fff;
+            font-family: "Ubuntu", serif;
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+.musicPlayer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 3rem;
+  right: 5rem;
+  z-index: 999999;
+  background: rgba(50, 50, 50, 0.569);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 10px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  gap: 2rem;
+  width: 35rem;
+  > .musicInfo {
+    > img {
+      width: 14rem;
+      border-radius: 0.5rem;
+    }
+  }
+  > .songDetail {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1.5rem;
+    & .musicDetail {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      & .musicName {
+        font-family: "Ubuntu", serif;
+        color: #fff;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding-right: 1rem;
+        width: 80%;
+        font-weight: 500;
+        > img {
+          height: 5rem;
+          position: relative;
+          top: 0.7rem;
+        }
+      }
+      & .musicAlbumName {
+        width: 80%;
+        font-family: "Ubuntu", serif;
+        color: #aeaeae;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        padding-right: 1rem;
+      }
+    }
+    > .controlButtons {
+      display: none;
+      gap: 0.7rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      transition: all 0.2s linear;
+      width: 90%;
+      > .musicContainer {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 0.3rem;
+        width: 100%;
+        flex-direction: column;
+        > .musicTimeIndicator {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          > span {
+            font-family: "Ubuntu", serif;
+            color: #afafaf;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+          }
+        }
+      }
+      & .musicControlButtons {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        > button {
+          transition: all 0.2s linear;
+          background-color: transparent;
+          border: none;
+          color: #afafaf;
+          height: 3rem;
+          width: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0.5rem;
+          cursor: pointer;
+          font-size: 1.5rem;
+          &:hover {
+            background-color: #232323;
+          }
+        }
+      }
+    }
+  }
+}
+
+input[type="range"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #b824b5 20%, #444 20%);
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  cursor: pointer;
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: -2px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track {
+  cursor: pointer;
+  height: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #b824b5 20%, #444 20%);
+}
